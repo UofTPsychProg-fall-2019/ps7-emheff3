@@ -1,0 +1,40 @@
+#Data Analysis for MA Project
+#Emily Heffernan
+
+#First import .csv data
+
+#Create a data frame with participant, type, resp.corr, rest.rt, TaskBlocks.thisN, LearningTask.thisN columns
+
+#Factorize the participant, type, and condition columns
+
+#DATA CLEANING#
+
+#Filter this data frame so it only contains learning blocks (df_learn)
+
+#For each participant in df_learn, count the number of responses that are missing, too fast or too slow (RT < 0.15ms or > 2s) 
+
+#Delete any participants with 80% unusable data
+
+#Determine average accuracy per learning block for 'prototype' stimuli, and count how many blocks per participant have an accuracy higher than 0.75. Exclude any participants who fail to meet this criterion for at least one block
+
+#LEARNING BLOCK ANALYSIS
+
+#Add a column, count, to df_learn that counts the number of each stimulus type seen by each participant for each trial
+
+#For each condition, create a logistic regression model as follows:
+#	resp.corr~scale(count)*condition*type+(1|participant)
+
+#Plot this model; also plot learning curves for individuals
+
+#NO FEEDBACK BLOCK ANALYSIS
+
+#Create data frames for the "no feedback" and "old vs new" blocks (df_nf and df_on, respectively)
+
+#Perform the same analysis from the learning block to the "no feedback" block
+
+#NEW VS OLD BLOCK ANALYSIS
+
+#Perform a d' analysis on the old vs new block to determine the hit rate for "new" stimuli
+
+
+
